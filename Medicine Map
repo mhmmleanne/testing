@@ -1,0 +1,13 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class MedicineMap {
+
+    public static void main (String[] args) {
+        Map<String, String> Meds = new HashMap<>();
+        
+        Meds.put("Aspirin", "Common painkiller for fever, cold, headaches, muscle ache");
+        Meds.put("Losartan", "Treats high blood pressure/hypertension");
+        Meds.put("Lactulose", "Treats constipation");
+    }
+}
