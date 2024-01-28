@@ -18,18 +18,29 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:translationY="@dimen/profile_picture_vertical_translation"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="@string/nav_header_title"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/logout_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/logout_button_title"
+        android:translationX="@dimen/logout_button_horizontal_translation"
+        android:translationY="@dimen/logout_button_vertical_translation" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="@dimen/nav_header_width"
+        android:layout_height="@dimen/nav_subheader_height"
+        android:text="@string/nav_header_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:translationX="@dimen/nav_subheader_horizontal_translation"
+        android:translationY="@dimen/nav_subheader_vertical_translation" />
+
+    <TextView
+        android:id="@+id/subheader"
+        android:layout_width="@dimen/nav_subheader_width"
+        android:layout_height="@dimen/nav_subheader_height"
         android:text="@string/nav_header_subtitle" />
 </LinearLayout>
